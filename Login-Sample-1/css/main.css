@@ -1,82 +1,84 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 @font-face {
   font-family: Ubuntu-Regular;
-  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
 }
 
 @font-face {
   font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
+  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
 }
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Ubuntu-Regular, sans-serif;
 }
 
 /*---------------------------------------------*/
+
 a {
-	font-family: Ubuntu-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
   color: #fff;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: Ubuntu-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: Ubuntu-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
-
 
 /*---------------------------------------------*/
+
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -84,29 +86,74 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder {
+  color: transparent;
+}
 
-input::-webkit-input-placeholder { color: #555555;}
-input:-moz-placeholder { color: #555555;}
-input::-moz-placeholder { color: #555555;}
-input:-ms-input-placeholder { color: #555555;}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
 
-textarea::-webkit-input-placeholder { color: #555555;}
-textarea:-moz-placeholder { color: #555555;}
-textarea::-moz-placeholder { color: #555555;}
-textarea:-ms-input-placeholder { color: #555555;}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: #555555;
+}
+
+input:-moz-placeholder {
+  color: #555555;
+}
+
+input::-moz-placeholder {
+  color: #555555;
+}
+
+input:-ms-input-placeholder {
+  color: #555555;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #555555;
+}
+
+textarea:-moz-placeholder {
+  color: #555555;
+}
+
+textarea::-moz-placeholder {
+  color: #555555;
+}
+
+textarea:-ms-input-placeholder {
+  color: #555555;
+}
 
 label {
   margin: 0;
@@ -114,30 +161,30 @@ label {
 }
 
 /*---------------------------------------------*/
+
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
+
 .txt1 {
   font-family: Poppins-Regular;
   font-size: 13px;
   color: #e5e5e5;
   line-height: 1.5;
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
@@ -148,7 +195,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -159,12 +206,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 1;  
+  z-index: 1;
 }
 
 .container-login100::before {
@@ -176,17 +222,15 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.65);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .wrap-login100 {
   width: 390px;
   border-radius: 10px;
   overflow: hidden;
-
   background: transparent;
 }
-
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -198,9 +242,8 @@ iframe {
 }
 
 .login100-form-logo {
-  font-size: 60px; 
+  font-size: 60px;
   color: #333333;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -222,10 +265,8 @@ iframe {
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-
   display: block;
 }
-
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -242,7 +283,6 @@ iframe {
   font-size: 20px;
   color: #555555;
   line-height: 1.2;
-
   display: block;
   width: 100%;
   height: 50px;
@@ -254,7 +294,8 @@ iframe {
   transition: all 0.4s;
 }
 
-/*---------------------------------------------*/ 
+/*---------------------------------------------*/
+
 .focus-input100 {
   position: absolute;
   display: block;
@@ -273,12 +314,10 @@ iframe {
   left: 0;
   width: 0;
   height: 1px;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-
   background: #d41872;
   background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
   background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
@@ -290,15 +329,12 @@ iframe {
   font-family: Linearicons-Free;
   font-size: 18px;
   color: #999999;
-
   content: attr(data-placeholder);
   display: block;
   width: 100%;
   position: absolute;
   top: 40px;
   left: 35px;
- 
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -309,21 +345,21 @@ iframe {
   padding-left: 60px;
 }
 
-.input100:focus + .focus-input100::after {
+.input100:focus+.focus-input100::after {
   left: 23px;
   color: #d41872;
 }
 
-.input100:focus + .focus-input100::before {
+.input100:focus+.focus-input100::before {
   width: 100%;
 }
 
-.has-val.input100 + .focus-input100::after {
+.has-val.input100+.focus-input100::after {
   left: 23px;
   color: #d41872;
 }
 
-.has-val.input100 + .focus-input100::before {
+.has-val.input100+.focus-input100::before {
   width: 100%;
 }
 
@@ -331,9 +367,9 @@ iframe {
   padding-left: 60px;
 }
 
-
 /*------------------------------------------------------------------
 [ Button ]*/
+
 .container-login100-form-btn {
   width: 100%;
   display: -webkit-box;
@@ -351,7 +387,6 @@ iframe {
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -363,7 +398,6 @@ iframe {
   min-width: 160px;
   height: 42px;
   border-radius: 21px;
-
   background: #d41872;
   background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
   background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
@@ -371,7 +405,6 @@ iframe {
   background: linear-gradient(left, #a445b2, #d41872, #fa4299);
   position: relative;
   z-index: 1;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -390,7 +423,6 @@ iframe {
   top: 0;
   left: 0;
   opacity: 0;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -404,8 +436,6 @@ iframe {
 .login100-form-btn:hover:before {
   opacity: 1;
 }
-
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
@@ -430,16 +460,13 @@ iframe {
   transform: translateY(-50%);
   right: 10px;
   pointer-events: none;
-
   font-family: Ubuntu-Bold;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-
   visibility: hidden;
   opacity: 0;
-
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
@@ -451,7 +478,6 @@ iframe {
   font-family: FontAwesome;
   font-size: 16px;
   color: #c80000;
-
   display: block;
   position: absolute;
   top: 50%;
@@ -474,6 +500,3 @@ iframe {
     opacity: 1;
   }
 }
-
-
-
